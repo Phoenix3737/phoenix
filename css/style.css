@@ -12,10 +12,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  color: #3d3536;
-  background-color: white;
 }
 
 a {
@@ -23,8 +20,16 @@ a {
   text-decoration: none;
 }
 
+/* company name */
+.phoenix {
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+}
+/* ------------ */
+
 /* -------------------------------- 
-Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
+Alternate Fixed & Scroll Backgrounds
 -------------------------------- */
 
 .cd-main-header {
@@ -153,26 +158,12 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
   z-index: 1;
 }
 
-.cd-fixed-bg__content, #hiImMark {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 3rem;
-}
+
 
 .cd-fixed-bg h1, .cd-fixed-bg h2 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: #2a3740;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
 }
 
 .cd-fixed-bg.cd-fixed-bg--1 {
@@ -181,6 +172,10 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 
 .cd-fixed-bg.cd-fixed-bg--2 {
   background-image: url("../img/mockup-2443050_1920.jpg");
+}
+
+.cd-fixed-bg cd-fixed-bg--2 {
+
 }
 
 /* .cd-fixed-bg.cd-fixed-bg--3 {
@@ -199,9 +194,9 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @media only screen and (min-width: 1170px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 4.8rem;
-    font-weight: 300;
+  .cd-fixed-bg h1 {
+    font-size: 72px;
+    font-weight: 500;
   }
   @supports (background-attachment: fixed) {
     /* fix bug on IE11 and below */
@@ -226,7 +221,7 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 }
 
 .cd-scrolling-bg.cd-scrolling-bg--color-2 {
-  height: 1200px;
+  height: 800px;
   background-color: #d4d5d5;
   color: #3d3536;
 }
@@ -257,124 +252,7 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 
 /* ------------------------------------animated text------------------------------------------------ */
 
-.unbreakable {
-  font-family: 'Anton', sans-serif;
-  line-height: 1;
-  letter-spacing: -.07em;
-  /* color: #777777; */
-}
 
-.ks {
-  font-family: 'Anton', sans-serif;
-  font-size: 36px;
-  text-align: left;
-  margin-left: 25px;
-  line-height: 1;
-  /* margin-top: -11px; */
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s cubic-bezier(.190, 1.000, .220, 1.000) 4.7s;
-  -webkit-transform: translateX(-1000%);
-  -ms-transform: translateX(-1000%);
-  transform: translateX(-1000%);
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: #fc0;
-  /* border-top: #bebebe solid 2px; */
-}
-
-.animate .ks {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-.unbreakable-text {
-  font-family: 'Anton', Helvetica, sans-serif;
-  font-size: 40px;
-  text-transform: uppercase;
-  opacity: 0;
-  color: #ffffff;
-  filter: alpha(opacity=0);
-}
-
-.able {
-  -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.9s;
-  transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.9s;
-  letter-spacing: -.07em;
-  font-weight: bolder;
-  color: #fc0;
-}
-
-.groves {
-  -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3.2s;
-  transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3.2s;
-  letter-spacing: -.07em;
-  font-weight: bolder;
-  color: #fc0;
-}
-
-.break {
-  -webkit-transition: all .3s ease-in-out 2.6s;
-  transition: all .3s ease-in-out 2.6s;
-  letter-spacing: -.07em;
-}
-
-.un {
-  -webkit-transition: all .3s ease-in-out 2.0s;
-  transition: all .3s ease-in-out 2.0s;
-  letter-spacing: -.07em;
-}
-
-.web {
-  -webkit-transition: all .3s ease-in-out 4.1s;
-  transition: all .3s ease-in-out 4.1s;
-  letter-spacing: -.07em;
-}
-
-.animate .un {
-  font-size: 40px;
-  -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.animate .break {
-  font-size: 60px;
-  -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.animate .able {
-  font-size: 80px;
-  -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.animate .groves {
-  font-size: 80px;
-  -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.animate .web {
-  font-size: 60px;
-  -webkit-transform: scale(1.5, 1.5);
-  -ms-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
 
 /* ------------------------------------veiw my work button------------------------------------------ */
 
@@ -385,9 +263,9 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
   margin-top: 90px;
 }
 
-.button-fade {
+/* .button-fade {
   opacity:0;
-  opacity: 1 \9; /*just in case ie*/
+  opacity: 1 \9;
   -webkit-animation:fadeIn ease-in 1;
   -moz-animation:fadeIn ease-in 1;
   animation:fadeIn ease-in 1;
@@ -403,12 +281,12 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   animation-delay: 6s;
-}
+} */
 
 /* Keyframes for the fade-in */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/* @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } } */
 
 
 /*------------------------------------------------- portfolio ---------------------------------------*/
@@ -420,7 +298,8 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
   width: 80%;
 }
 
-#projects-header h1 {
+#pricing-header h1 {
+  color: #2f292a;
   text-align: center;
   border-bottom: #2f292a solid 2px;
   font-size: 36px;
@@ -433,104 +312,9 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
 
 /*bootstrap */
 
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-}
 
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translatey(-100px);
-  -ms-transform: translatey(-100px);
-  transform: translatey(-100px);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  padding: 10px;
-}
-
-.hovereffect a.info {
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  margin: 50px 0 0;
-  padding: 7px 14px;
-}
-
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
-}
-
-.hovereffect:hover img {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.hovereffect:hover .overlay {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.hovereffect:hover h2, .hovereffect:hover a.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-transform: translatey(0);
-  -webkit-transform: translatey(0);
-  transform: translatey(0);
-}
-
-.hovereffect:hover a.info {
-  -webkit-transition-delay: .2s;
-  transition-delay: .2s;
-}
 
 /* -------------------About Section-------------------------------------------------------------------- */
-
-#about-header {
-  text-align: center;
-  border-bottom: #2f292a solid 2px;
-  position: absolute;
-  top: 7%;
-  left: 41%;
-}
-
 .about-text h1 {
   font-size: 36px;
   font-weight: bold;
@@ -541,325 +325,15 @@ Alternate Fixed & Scroll Backgrounds - by CodyHouse.co
   font-weight: bolder;
 }
 
-#icon-1 {
-  width: 100px;
-  height: 100px;
-  background: #fc0;
-  border-radius: 50%
-}
-
-#icon-2 {
-  width: 100px;
-  height: 100px;
-  background: #fc0;
-  border-radius: 50%;
-}
-
-#icon-3 {
-  width: 100px;
-  height: 100px;
-  background: #fc0;
-  border-radius: 50%
-}
-
-/* Profile pic */
-
-#slider {
-  height: 360px;
-  transform: translateX(-200%);
-  -webkit-transform: translateX(-200%);
-  text-align: center;
-  margin-top: 183px;
-}
-
-.slide-in.start {
-  animation: slide-in 2s forwards;
-  -webkit-animation: slide-in 2s forwards;
-}
-
-.slide-out {
-  animation: slide-out 0.5s forwards;
-  -webkit-animation: slide-out 0.5s forwards;
-}
-
-@keyframes slide-in {
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@-webkit-keyframes slide-in {
-  100% {
-    -webkit-transform: translateX(0%);
-  }
-}
-
-/* @keyframes slide-out {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-}
-
-@-webkit-keyframes slide-out {
-  0% {
-    -webkit-transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-200%);
-  }
-} */
-
-/* -------------Chart---------- */
-
-body {
-  background: black;
-  color: white;
-}
-
-.wrapper {
-  margin-top: 100px;
-  margin-left: 30px;
-  line-height: 28px;
-}
-
-.wrapper h2 {
-  text-align: center;
-  text-transform: uppercase;
-  margin-block-end: 5%;
+/* -------------------Pricing Section----------------------------------------------------- */
+.pricing-text h1 {
   font-size: 36px;
   font-weight: bold;
 }
 
-.skills-area {
-  width: 100%;
-}
-
-.single-skills {
-  list-style: none;
-  /* padding-top: 25px; */
-}
-
-.single-skills li {
-  margin-block-end: 40px;
-  height: 50px;
-  margin-bottom: 0px;
-}
-
-/* .single-skills li b {
-  position: relative;
-  top: -20px;
+.pricing-text h2 {
   font-size: 24px;
-  font-weight: bolder;
-  color: white;
-  -webkit-animation: fadein 5s; 
-       -moz-animation: fadein 5s; 
-        -ms-animation: fadein 5s; 
-         -o-animation: fadein 5s; 
-            animation: fadein 5s;
-} */
 
-.line {
-  position: absolute;
-  background-color: #333;
-  margin: 20px 0;
-  height: 26px;
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s; /* Firefox < 16 */
-   -ms-animation: fadein 4s; /* Internet Explorer */
-    -o-animation: fadein 4s; /* Opera < 12.1 */
-       animation: fadein 4s;
-}
-.skills-labels li {
-  /* position: absolute; */
-  background-color: #333;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 24px;
-  height: 26px;
-  list-style: none;
-  padding: 0px 0px;
-  
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s; /* Firefox < 16 */
-   -ms-animation: fadein 4s; /* Internet Explorer */
-    -o-animation: fadein 4s; /* Opera < 12.1 */
-       animation: fadein 4s;
-}
-
-/* .text-block { */
-  /* position: absolute; */
-  /* width: 100%;
-  top: -20px;
-  font-size: 24px;
-  font-weight: bolder;
-  color: white;
-  background-color: #333;
-  margin: 20px 0;
-  height: 26px;
-} */
-
-/* .skills-bar {
-  background: #b4d7a8;
-  width: 100%;
-} */
-
-.html.start {
-  width: 90%;
-  -webkit-animation: 1s ease-out html;
-  -o-animation: 1s ease-out html;
-  animation: 1s ease-out html;
-  
-}
-
-.css.start {
-  width: 80%;
-  -webkit-animation: 1.3s ease-out css;
-  -o-animation: 1.3s ease-out css;
-  animation: 1.3s ease-out css;
-}
-
-.javascript.start {
-  width: 70%;
-  -webkit-animation: 1.6s ease-out javascript;
-  -o-animation: 1.6s ease-out javascript;
-  animation: 1.6s ease-out javascript;
-}
-
-.photoshop.start {
-  width: 90%;
-  -webkit-animation: 1.9s ease-out photoshop;
-  -o-animation: 2.9s ease-out photoshop;
-  animation: 1.9s ease-out photoshop;
-}
-
-.react.start {
-  width: 60%;
-  -webkit-animation: 2.2s ease-out react;
-  -o-animation: 2.2s ease-out react;
-  animation: 2.2s ease-out react;
-}
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes html {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes html {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes css {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-@keyframes css {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-@keyframes javascript {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-@-webkit-keyframes javascript {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-@keyframes photoshop {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes photoshop {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes react {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-@-webkit-keyframes react {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
 }
 
 /* ----------------------------------contact page---------------------------------- */
@@ -868,71 +342,5 @@ body {
   text-align: center;
 }
 
-.social {
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0px 0px 20px 75px;
-}
 
-.social-header {
-  color: #192127;
-  margin-bottom: 13px;
-}
 
-.fab {
-  padding: 20px;
-  width: 82px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa {
-  padding: 20px;
-  width: 82px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa-linkedin:before {
-  font-size: 40px;
-}
-
-.fa-slack:before {
-  font-size: 40px;
-}
-
-.fa-github:before {
-  font-size: 40px;
-}
-
-.fa-linkedin:hover {
-  background: white;
-  color: #007bb5;
-}
-
-.fa-slack:hover {
-  background: white;
-  color: #02bb79;
-}
-
-.fa-github:hover {
-  background-color: lightgray;
-  color: black;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-slack {
-  background: #02bb79;
-  color: white;
-}
-
-.fa-github {
-  background: #000000;
-  color: white;
-}
