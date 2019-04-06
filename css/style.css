@@ -167,11 +167,12 @@ Alternate Fixed & Scroll Backgrounds
 }
 
 .cd-fixed-bg.cd-fixed-bg--1 {
-  background-image: url("../img/jack-b-398287-unsplash.jpg");
+  background-image: url("../img/frank-mckenna-252014-unsplash.jpg");
 }
 
+
 .cd-fixed-bg.cd-fixed-bg--2 {
-  background-image: url("../img/mockup-2443050_1920.jpg");
+  background-image: url("../img/vanveenjf-1136697-unsplash.jpg");
 }
 
 .cd-fixed-bg cd-fixed-bg--2 {
@@ -250,43 +251,7 @@ Alternate Fixed & Scroll Backgrounds
 
 
 
-/* ------------------------------------animated text------------------------------------------------ */
 
-
-
-/* ------------------------------------veiw my work button------------------------------------------ */
-
-#about-button {
-  color: #fff;
-  background-color: #192127;
-  border-color: #ffffff;
-  margin-top: 90px;
-}
-
-/* .button-fade {
-  opacity:0;
-  opacity: 1 \9;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  animation-delay: 6s;
-} */
-
-/* Keyframes for the fade-in */
-/* @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } } */
 
 
 /*------------------------------------------------- portfolio ---------------------------------------*/
@@ -298,23 +263,10 @@ Alternate Fixed & Scroll Backgrounds
   width: 80%;
 }
 
-#pricing-header h1 {
-  color: #2f292a;
-  text-align: center;
-  border-bottom: #2f292a solid 2px;
-  font-size: 36px;
-  font-weight: bold;
-  position: absolute;
-  top: 60px;
-  left: 477px;
-  padding: 15px;
-}
-
-/*bootstrap */
-
-
-
 /* -------------------About Section-------------------------------------------------------------------- */
+.about-text {
+  padding: 80px;
+}
 .about-text h1 {
   font-size: 36px;
   font-weight: bold;
@@ -326,6 +278,9 @@ Alternate Fixed & Scroll Backgrounds
 }
 
 /* -------------------Pricing Section----------------------------------------------------- */
+.pricing-text {
+  padding: 80px;
+}
 .pricing-text h1 {
   font-size: 36px;
   font-weight: bold;
