@@ -16,23 +16,40 @@ body {
 }
 
 a {
-  color: #b4d7a8;
+  color: #c7c7c7;
   text-decoration: none;
+}
+
+
+
+.phone {
+  color: #c7c7c7;
+  /* margin-top: 5px; */
+}
+.phone a:hover {
+  color: #e3b015;
+  /* margin-top: 5px; */
 }
 
 /* company name */
 .phoenix  {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 200px;
 }
 
 .phoenix h1, h2 {
   font-weight: bold;
-  color:black;
+  color:#c7c7c7;
   margin: 0px;
 }
 
 /* ------------ */
+
+#about-button {
+  background-color: #ba0c2f;
+  border-color: #ba0c2f;
+  margin-top: 50px;
+}
 
 /* -------------------------------- 
 Alternate Fixed & Scroll Backgrounds
@@ -44,7 +61,7 @@ Alternate Fixed & Scroll Backgrounds
   left: 0;
   width: 100%;
   height: 50px;
-  background: rgb(25, 33, 39);
+  background:	#ba0c2f;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 3;
@@ -151,7 +168,7 @@ Alternate Fixed & Scroll Backgrounds
     font-size: 1.4rem;
   }
   .cd-main-nav__list a:hover {
-    color: #fc0;
+    color: #e3b015;
   }
 }
 
@@ -199,10 +216,15 @@ Alternate Fixed & Scroll Backgrounds
   }
 }
 
+
+.container {
+    width: 1092px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Anton);
 @media only screen and (min-width: 1170px) {
   .cd-fixed-bg h1 {
-    font-size: 72px;
+    font-size: 100px;
     font-weight: 500;
   }
   @supports (background-attachment: fixed) {
@@ -234,7 +256,7 @@ Alternate Fixed & Scroll Backgrounds
 }
 
 .cd-scrolling-bg.cd-scrolling-bg--color-3 {
-  background-color: #ffe27a;
+  background-color: #595a5c;
   color: #3d3536;
 }
 
@@ -271,14 +293,18 @@ Alternate Fixed & Scroll Backgrounds
 
 /* -------------------About Section-------------------------------------------------------------------- */
 .about-text {
-  padding: 80px;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .about-text h1 {
+  color: #2f292a;
   font-size: 36px;
   font-weight: bold;
 }
 
 .about-text h2 {
+  color: #2f292a;
   font-size: 24px;
   font-weight: bolder;
 }
@@ -286,17 +312,17 @@ Alternate Fixed & Scroll Backgrounds
 /* -------------------Pricing Section----------------------------------------------------- */
 .pricing-text {
   background: rgba(0, 0, 0, 0.8);
-  color: white;
   padding: 80px;
 }
 .pricing-text h1 {
+  color: white;
   font-size: 36px;
-  font-weight: bold;
 }
 
 .pricing-text h2 {
   font-size: 24px;
   color: white;
+  font-weight: inherit;
 
 }
 
